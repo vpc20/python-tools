@@ -12,4 +12,9 @@ def matrix_coordinates(m, n):
 
 
 if __name__ == '__main__':
-    print_matrix(matrix_coordinates(4, 4))
+    print_matrix(matrix_coordinates(10, 10))
+
+
+x = matrix_coordinates(10, 10)
+for e in x:
+    print(e)

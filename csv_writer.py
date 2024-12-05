@@ -13,3 +13,25 @@ with open("temp.csv", "w", newline='') as f:
 with open("temp1.csv", "a", newline='') as csvf:
     csv_writer = csv.writer(csvf)
     csv_writer.writerow(a[0])
+
+# arr = [[[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]], [[0, 0, 0, 0], [0, 1, 1, 1], [0, 1, 1, 1], [0, 1, 1, 1], [0, 1, 1, 1], [0, 1, 1, 1]], [[0, 0, 0, 0], [0, 1, 1, 1], [0, 1, 1, 1], [0, 1, 1, 1], [0, 1, 2, 2], [0, 1, 2, 2]], [[0, 0, 0, 0], [0, 1, 1, 1], [0, 1, 1, 1], [0, 1, 1, 1], [0, 1, 2, 2], [0, 1, 2, 2]], [[0, 1, 1, 1], [0, 1, 2, 2], [0, 1, 2, 2], [0, 1, 2, 2], [0, 1, 2, 3], [0, 1, 2, 3]], [[0, 1, 1, 1], [1, 2, 2, 2], [1, 2, 3, 3], [1, 2, 3, 3], [1, 2, 3, 3], [1, 2, 3, 4]]]
+# with open("oneszeroes.csv", "w", newline='') as f:
+#     writer = csv.writer(f)
+#     for e in arr:
+#         writer.writerows(e)
+
+# with open("longestvalidparen.csv", "a", newline='') as csvf:
+#     csv_writer = csv.writer(csvf)
+#     csv_writer.writerow([0, 2])
+#     csv_writer.writerow([0, 2, 0, 4])
+#     csv_writer.writerow([0, 2, 0, 4, 0, 6])
+#     csv_writer.writerow([0, 0, 2, 4])
+#     csv_writer.writerow([0, 0, 0, 2, 4, 6])
+#     csv_writer.writerow([0, 2, 0, 0, 0, 2, 4, 8])
+
+with open("tempx.csv", "w", newline='') as f:
+    writer = csv.writer(f)
+    writer.writerows(
+        [[0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 1, 1], [0, 1, 1, 1, 1, 1, 1, 1], [0, 1, 1, 1, 1, 1, 1, 1],
+         [0, 1, 1, 2, 2, 2, 2, 2], [0, 1, 1, 2, 2, 3, 3, 3], [0, 1, 1, 2, 2, 3, 3, 4]]
+        )
