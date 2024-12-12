@@ -8,7 +8,7 @@ kot_zipf = ZipFile(r'C:\Users\vpc\Documents\MuseScore3\Scores\KotlinProjects.zip
 for dirpath, dirnames, filenames in os.walk(r'C:\Users\vpc\PycharmProjects'):
     for filename in filenames:
         fullname = dirpath + '\\' + filename
-        if fullname.endswith('.py') \
+        if fullname.endswith('text_to_matrix.py') \
                 and '__init__' not in fullname \
                 and '\\Lib\\' not in fullname \
                 and '\\Scripts\\' not in fullname:

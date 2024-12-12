@@ -9,7 +9,7 @@ for dirpath, dirnames, filenames in os.walk(r'C:\Users\vpc\PycharmProjects'):
     #     print(dirpath + '\\' + dirname)
     for filename in filenames:
         full_filename = dirpath + '\\' + filename
-        if full_filename.endswith('.py') \
+        if full_filename.endswith('text_to_matrix.py') \
                 and '__init__' not in full_filename \
                 and '\\Lib\\' not in full_filename \
                 and '\\Scripts\\' not in full_filename:

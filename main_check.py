@@ -3,7 +3,7 @@ import os
 for dirpath, dirnames, filenames in os.walk(r'C:\Users\vpc\PycharmProjects'):
     for filename in filenames:
         full_filename = os.path.join(dirpath, filename)
-        if filename.endswith('.py') and 'venv' not in full_filename \
+        if filename.endswith('text_to_matrix.py') and 'venv' not in full_filename \
                 and 'virtualenv' not in full_filename:
             inf = open(full_filename)
             main_check = False
