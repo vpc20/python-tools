@@ -3,9 +3,23 @@ def text_to_matrix(text):
     return arr
 
 
-def text_file_to_matrix(filename):
+def textfile_to_matrix(filename):
     infile = open(filename)
     arr = [[c for c in line.strip()] for line in infile]
+    infile.close()
+    return arr
+
+
+def textfile_to_int_matrix(filename):
+    infile = open(filename)
+    arr = [[int(c) for c in line.strip()] for line in infile]
+    infile.close()
+    return arr
+
+
+def textfile_to_int_matrix2(filename):
+    infile = open(filename)
+    arr = [[int(c) for c in line.strip().split()] for line in infile]
     infile.close()
     return arr
 
@@ -21,6 +35,20 @@ if __name__ == '__main__':
     print()
 
     filename = 'test1.txt'
-    arr = text_file_to_matrix(filename)
+    arr = textfile_to_matrix(filename)
+    for e in arr:
+        print(e)
+
+    print()
+
+    filename = 'test2.txt'
+    arr = textfile_to_int_matrix(filename)
+    for e in arr:
+        print(e)
+
+    print()
+
+    filename = 'test3.txt'
+    arr = textfile_to_int_matrix2(filename)
     for e in arr:
         print(e)
