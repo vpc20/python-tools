@@ -10,6 +10,10 @@ def textfile_to_matrix(filename):
     return arr
 
 
+# sample input for textfile_to_int_matrix
+# 12345
+# 23456
+# 34567
 def textfile_to_int_matrix(filename):
     infile = open(filename)
     arr = [[int(c) for c in line.strip()] for line in infile]
@@ -17,6 +21,10 @@ def textfile_to_int_matrix(filename):
     return arr
 
 
+# sample input for textfile_to_int_matrix2
+# 12345 456789 789456
+# 23456 345678 456123
+# 34567 456789 321654
 def textfile_to_int_matrix2(filename):
     infile = open(filename)
     arr = [[int(c) for c in line.strip().split()] for line in infile]

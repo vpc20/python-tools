@@ -57,3 +57,4 @@ if __name__ == '__main__':
     g = matrix_to_graph(arr)
     for k, v in g.items():
         print('key', k, ' val', v)
+
