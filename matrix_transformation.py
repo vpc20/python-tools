@@ -1,5 +1,7 @@
 def transpose(matrix):
-    return [[matrix[j][i] for j in range(len(matrix))] for i in range(len(matrix[0]))]
+    nrows = len(matrix)
+    ncols = len(matrix[0])
+    return [[matrix[j][i] for j in range(nrows)] for i in range(ncols)]
 
 
 # def rotate(matrix):
@@ -15,7 +17,15 @@ def transpose(matrix):
 
 
 def rotate(matrix):  # clockwise
-    return [[matrix[j][i] for j in range(len(matrix) - 1, -1, -1)] for i in range(len(matrix[0]))]
+    nrows = len(matrix)
+    ncols = len(matrix[0])
+    return [[matrix[j][i] for j in range(nrows - 1, -1, -1)] for i in range(ncols)]
+
+
+def flip_vertical(matrix):
+    ncols = len(matrix[0])
+    nrows = len(matrix)
+    return [[matrix[i][j] for j in range(ncols - 1, -1, -1)] for i in range(nrows)]
 
 
 if __name__ == '__main__':
@@ -27,10 +37,14 @@ if __name__ == '__main__':
         print(e)
     print()
 
-    # m1 = transpose(m)
+    m1 = transpose(m)
+    for e in m1:
+        print(e)
+
+    # m1 = rotate(m)
     # for e in m1:
     #     print(e)
 
-    m1 = rotate(m)
-    for e in m1:
-        print(e)
+    # m1 = flip_vertical(m)
+    # for e in m1:
+    #     print(e)
