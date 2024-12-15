@@ -23,8 +23,8 @@ def rotate(matrix):  # clockwise
 
 
 def flip_vertical(matrix):
-    ncols = len(matrix[0])
     nrows = len(matrix)
+    ncols = len(matrix[0])
     return [[matrix[i][j] for j in range(ncols - 1, -1, -1)] for i in range(nrows)]
 
 
