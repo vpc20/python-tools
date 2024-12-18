@@ -49,4 +49,4 @@ def print_directions_list(dirlist):
 
 if __name__ == '__main__':
     print_directions_list([RIGHT, DOWN, LEFT, UP])
-    # print_directions_list([UP, RIGHT, DOWN, LEFT])
+    print_directions_list([UP, RIGHT, DOWN, LEFT])

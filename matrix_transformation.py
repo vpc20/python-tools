@@ -28,6 +28,13 @@ def flip_vertical(matrix):
     return [[matrix[i][j] for j in range(ncols - 1, -1, -1)] for i in range(nrows)]
 
 
+def flip_horizontal(matrix):
+    nrows = len(matrix)
+    ncols = len(matrix[0])
+    # x = [[matrix[i][j] for j in range(ncols)] for i in range(nrows - 1, -1, -1)]
+    return [[matrix[i][j] for j in range(ncols)] for i in range(nrows - 1, -1, -1)]
+
+
 if __name__ == '__main__':
 
     m = [[1, 2, 3],
@@ -37,9 +44,9 @@ if __name__ == '__main__':
         print(e)
     print()
 
-    m1 = transpose(m)
-    for e in m1:
-        print(e)
+    # m1 = transpose(m)
+    # for e in m1:
+    #     print(e)
 
     # m1 = rotate(m)
     # for e in m1:
@@ -48,3 +55,7 @@ if __name__ == '__main__':
     # m1 = flip_vertical(m)
     # for e in m1:
     #     print(e)
+
+    m1 = flip_horizontal(m)
+    for e in m1:
+        print(e)
