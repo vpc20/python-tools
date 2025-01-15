@@ -65,3 +65,4 @@ print('')
 print(ord('ₜ'))
 print(ord('ₛ'))
 
+print("\ue73c")
