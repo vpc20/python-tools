@@ -45,6 +45,11 @@ def random_string_len_n(n):
     return ''.join([choice(ascii_lowercase) for _ in range(n)])
 
 
+def random_binary_string(strlen):
+    length = randrange(strlen)
+    return ''.join(choice('01') for _ in range(length))
+
+
 # for i in range(5):
 #     arr = random_string_array(10, 10)
 #     print arr
