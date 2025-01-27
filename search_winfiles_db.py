@@ -20,7 +20,7 @@ def query_winfile_wildcard(filename_pattern):
     # Fetch all matching rows
     rows = cursor.fetchall()
     for filename, filepath in rows:
-        print(f"Filename: {filename}, Filepath: {filepath}")
+        print(f"{filepath}\\{filename}")
 
     # Close the connection
     conn.close()
