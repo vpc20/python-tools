@@ -103,23 +103,29 @@ def print_all_winfiles():
     conn.close()
 
 
-def insert_winfile():
+def insert_winfile(folder):
     # Connect to the database
     conn = sqlite3.connect('winfiles.db')
 
     # Create a cursor object to interact with the database
     cursor = conn.cursor()
 
-    for dirpath, dirnames, filenames in os.walk('C:\\Users\\vpc'):
+    ctr = 0
+    for dirpath, dirnames, filenames in os.walk(folder):
+        if '\\.' in dirpath or 'AndroidStudioProjects' in dirpath:
+            print(dirpath)
+            continue
         for filename in filenames:
             try:
                 cursor.execute('''
                 INSERT INTO winfiles (filename, filepath)
                 VALUES (?, ?)
                 ''', (filename, dirpath))
+                ctr += 1
+                print(ctr)
             except sqlite3.IntegrityError:
                 pass
-            print(filename, dirpath)
+            # print(filename, dirpath)
             # Commit the changes and close the connection
             conn.commit()
 
@@ -145,7 +151,13 @@ def create_winfiles_db():
 
 if __name__ == '__main__':
     # create_winfiles_db()
-    # insert_winfile()
+
+    # xxxdelete_all_winfiles()xxx
+
+    # insert_winfile(r'C:\Users\vpc\OneDrive\Documents')
+    # insert_winfile(r'C:\Users\vpc\PycharmProjects')
+    # insert_winfile(r'C:\Users\vpc')
+
     # print_all_winfiles()
     # query_winfile('dir2a')
-    query_winfile_wildcard('sysconfig*')
+    query_winfile_wildcard('matrix*')
