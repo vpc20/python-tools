@@ -1,7 +1,7 @@
 # def transpose(matrix):
 #     nrows = len(matrix)
 #     ncols = len(matrix[0])
-#     return [[matrix[j][i] for j in range(nrows)] for i in range(ncols)]
+#     return [[matrix[j][i] for j in range(ncols)] for i in range(nrows)]
 
 
 def transpose(matrix):  # much faster than function above
@@ -25,10 +25,10 @@ def rotate_clockwise(matrix):
 
 def rotate_counter_clockwise(matrix):
     # Flip the matrix vertically
-    flipped_vertival_matrix = [row[::-1] for row in matrix]
+    flipped_vertical_matrix = [row[::-1] for row in matrix]
 
     # Transpose to get the rotated matrix
-    rotated_matrix = list(zip(*flipped_vertival_matrix))
+    rotated_matrix = list(zip(*flipped_vertical_matrix))
 
     return rotated_matrix
 
