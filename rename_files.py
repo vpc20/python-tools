@@ -10,7 +10,7 @@ def camel_to_snake_case(s):
 for dirpath, dirnames, filenames in os.walk(os.curdir):
     for filename in filenames:
         new_filename = camel_to_snake_case(filename)
-        if dirpath == '.' and filename.endswith('.py') and filename != new_filename:  # current directory only
+        if dirpath == '.' and filename.endswith('colors_rgb.py') and filename != new_filename:  # current directory only
             print(filename, new_filename)
             # os.renamexxx(filename, new_filename)  # xxx added to avoid accidental rename
 
