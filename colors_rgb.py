@@ -20,27 +20,27 @@ def print_colored_text(text, fg_hex, bg_hex):
 
 
 # Example usage:
-color1 = "660000"
-color2 = "006600"
-color3 = "000066"
-color4 = "666600"
-color5 = "006666"
-color6 = "660066"
+color_maroon = "660000"
+color_green = "006600"
+color_navy = "000066"
+color_olive = "666600"
+color_mosque = "006666"
+color_purple = "660066"
 
 print()
-print_colored_text("", color1, "1e1f22")
-print_colored_text("Hello, World!", "FFFFFF", color1)
-print_colored_text("", color1, color2)
-print_colored_text(" Python Colors", "FFFFFF", color2)
-print_colored_text("", color2, color3)
-print_colored_text(" Basic Colors", "FFFFFF", color3)
-print_colored_text("", color3, color4)
-print_colored_text(" Color Picker", "FFFFFF", color4)
-print_colored_text("", color4, color5)
-print_colored_text(" RGB Colors", "FFFFFF", color5)
-print_colored_text("", color5, color6)
-print_colored_text(" Color Harmony", "FFFFFF", color6)
-print_colored_text("", color6, "#1e1f22")
+print_colored_text("", color_maroon, "1e1f22")
+print_colored_text("Hello, World!", "FFFFFF", color_maroon)
+print_colored_text("", color_maroon, color_green)
+print_colored_text(" Python Colors", "FFFFFF", color_green)
+print_colored_text("", color_green, color_navy)
+print_colored_text(" Basic Colors", "FFFFFF", color_navy)
+print_colored_text("", color_navy, color_olive)
+print_colored_text(" Color Picker", "FFFFFF", color_olive)
+print_colored_text("", color_olive, color_mosque)
+print_colored_text(" RGB Colors", "FFFFFF", color_mosque)
+print_colored_text("", color_mosque, color_purple)
+print_colored_text(" Color Harmony", "FFFFFF", color_purple)
+print_colored_text("", color_purple, "#1e1f22")
 print()
 
 # 3371FF
