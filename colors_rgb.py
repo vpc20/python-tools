@@ -20,12 +20,12 @@ def print_colored_text(text, fg_hex, bg_hex):
 
 
 # Example usage:
-color1 = "AA0000"
-color2 = "00AA00"
-color3 = "0000AA"
-color4 = "AAAA00"
-color5 = "00AAAA"
-color6 = "AA00AA"
+color1 = "660000"
+color2 = "006600"
+color3 = "000066"
+color4 = "666600"
+color5 = "006666"
+color6 = "660066"
 
 print()
 print_colored_text("", color1, "1e1f22")
