@@ -20,28 +20,33 @@ def print_colored_text(text, fg_hex, bg_hex):
 
 
 # Example usage:
-color_maroon = "660000"
-color_green = "006600"
-color_navy = "000066"
-color_olive = "666600"
-color_mosque = "006666"
-color_purple = "660066"
+# color_maroon = "660000"
+# color_green = "006600"
+# color_navy = "000066"
+# color_olive = "666600"
+# color_mosque = "006666"
+# color_purple = "660066"
+
+# colors = ["#00132d","#00193b","#001e45","#002657","#002d67","#00377e"]
+# colors = ["#ede0d4","#e6ccb2","#ddb892","#b08968","#9c6644","#7f5539"]
+# colors = ["#5c2f18","#2a4891","#008040","#ff4444","#471f71","#847244"]
+# colors = ["#c1aaaa","#5555FF","#008040","#ff5555","#479999","#847244"]
+colors = ['#D66BA0', '#847244', '#198888', '#ff5555', '#5555FF', '#706fac']
 
 print()
-print_colored_text("", color_maroon, "1e1f22")
-print_colored_text("Hello, World!", "FFFFFF", color_maroon)
-print_colored_text("", color_maroon, color_green)
-print_colored_text(" Python Colors", "FFFFFF", color_green)
-print_colored_text("", color_green, color_navy)
-print_colored_text(" Basic Colors", "FFFFFF", color_navy)
-print_colored_text("", color_navy, color_olive)
-print_colored_text(" Color Picker", "FFFFFF", color_olive)
-print_colored_text("", color_olive, color_mosque)
-print_colored_text(" RGB Colors", "FFFFFF", color_mosque)
-print_colored_text("", color_mosque, color_purple)
-print_colored_text(" Color Harmony", "FFFFFF", color_purple)
-print_colored_text("", color_purple, "#1e1f22")
+print_colored_text("", colors[0], "1e1f22")
+print_colored_text("Hello, World!", "FFFFFF", colors[0])
+print_colored_text("", colors[0], colors[1])
+print_colored_text(" Python Colors", "FFFFFF", colors[1])
+print_colored_text("", colors[1], colors[2])
+print_colored_text(" Basic Colors", "FFFFFF", colors[2])
+print_colored_text("", colors[2], colors[3])
+print_colored_text(" Color Picker", "FFFFFF", colors[3])
+print_colored_text("", colors[3], colors[4])
+print_colored_text(" RGB Colors", "FFFFFF", colors[4])
+print_colored_text("", colors[4], colors[5])
+print_colored_text(" Color Harmony", "FFFFFF", colors[5])
+print_colored_text("", colors[5], "#1e1f22")
 print()
 
 # 3371FF
-
