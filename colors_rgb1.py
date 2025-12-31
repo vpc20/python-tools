@@ -36,27 +36,11 @@ def print_colored_text(text, fg_hex, bg_hex):
 # colors = ["#c1aaaa","#5555FF","#008040","#ff5555","#479999","#847244"]
 # colors = ['#D66BA0', '#847244', '#198888', '#ff5555', '#5555FF', '#706fac']
 
-colors = [0] * 6
-for i in range(6):
-    colors[i] = f"{random.randint(0, 0xFFFFFF) :06x}"
-    print_colored_text(f' {colors[i]} ', "ffffff", colors[i] )
-    print('   ', end='')
-print()
+for j in range(10):
+    colors = [0] * 6
+    for i in range(6):
+        colors[i] = f"{random.randint(0, 0xFFFFFF) :06x}"
+        print_colored_text(f' {colors[i]} ', "ffffff", colors[i] )
+        print('   ', end='')
+    print()
 
-print()
-print_colored_text("", colors[0], "1e1f22")
-print_colored_text("Hello, World!", "FFFFFF", colors[0])
-print_colored_text("", colors[0], colors[1])
-print_colored_text(" Python Colors", "FFFFFF", colors[1])
-print_colored_text("", colors[1], colors[2])
-print_colored_text(" Basic Colors", "FFFFFF", colors[2])
-print_colored_text("", colors[2], colors[3])
-print_colored_text(" Color Picker", "FFFFFF", colors[3])
-print_colored_text("", colors[3], colors[4])
-print_colored_text(" RGB Colors", "FFFFFF", colors[4])
-print_colored_text("", colors[4], colors[5])
-print_colored_text(" Color Harmony", "FFFFFF", colors[5])
-print_colored_text("", colors[5], "#1e1f22")
-print()
-
-# 3371FF
