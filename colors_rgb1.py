@@ -39,7 +39,7 @@ def print_colored_text(text, fg_hex, bg_hex):
 for j in range(10):
     colors = [0] * 6
     for i in range(6):
-        colors[i] = f"{random.randint(0, 0xFFFFFF) :06x}"
+        colors[i] = f"{random.randint(0, 0xd4d4d4) :06x}"
         print_colored_text(f' {colors[i]} ', "ffffff", colors[i] )
         print('   ', end='')
     print()
